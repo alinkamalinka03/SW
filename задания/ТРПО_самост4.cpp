@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	
-	int dlinaParallelepipeda, shirinaParallelepipeda, vysotaParallelepipeda, dlinaOtverstiya, shirinaOtverstiya, vysotaOtverstiya, volumeParallelepipeda, volumeOtverstiya;
+	int dlinaParallelepipeda, shirinaParallelepipeda, vysotaParallelepipeda, dlinaOtverstiya, shirinaOtverstiya, vysotaOtverstiya;
 	
 	cout << "Vvedite dliny parallelepipeda: " << endl;
 	cin >> dlinaParallelepipeda;
@@ -24,17 +24,7 @@ int main()
 	cout << "Vvedite vysoty otverstiya: " << endl;
 	cin >> vysotaOtverstiya;
 	
-	volumeParallelepipeda = dlinaParallelepipeda * shirinaParallelepipeda * vysotaParallelepipeda;
-	volumeOtverstiya = dlinaOtverstiya * shirinaOtverstiya * vysotaOtverstiya; 
-	
-	if (volumeOtverstiya < volumeParallelepipeda)
-	{
-		cout << "Ne pomestitsya" << endl;
-	}
-	
-	else
-	{
-		if ((dlinaParallelepipeda < dlinaOtverstiya && shirinaParallelepipeda < shirinaOtverstiya && vysotaParallelepipeda < vysotaOtverstiya) || (dlinaParallelepipeda < shirinaOtverstiya && shirinaParallelepipeda < dlinaOtverstiya && vysotaParallelepipeda < vysotaOtverstiya) || (dlinaParallelepipeda < vysotaOtverstiya && shirinaParallelepipeda < shirinaOtverstiya && vysotaParallelepipeda < dlinaOtverstiya) || (shirinaParallelepipeda < vysotaOtverstiya && dlinaParallelepipeda < shirinaOtverstiya && vysotaParallelepipeda < dlinaOtverstiya) || (vysotaParallelepipeda < shirinaOtverstiya && dlinaParallelepipeda < dlinaOtverstiya && shirinaParallelepipeda < vysotaOtverstiya) || (vysotaParallelepipeda < shirinaOtverstiya && dlinaParallelepipeda < vysotaOtverstiya && shirinaParallelepipeda < dlinaOtverstiya))
+	if ((dlinaParallelepipeda < dlinaOtverstiya && shirinaParallelepipeda < shirinaOtverstiya && vysotaParallelepipeda < vysotaOtverstiya) || (dlinaParallelepipeda < shirinaOtverstiya && shirinaParallelepipeda < dlinaOtverstiya && vysotaParallelepipeda < vysotaOtverstiya) || (dlinaParallelepipeda < vysotaOtverstiya && shirinaParallelepipeda < shirinaOtverstiya && vysotaParallelepipeda < dlinaOtverstiya) || (shirinaParallelepipeda < vysotaOtverstiya && dlinaParallelepipeda < shirinaOtverstiya && vysotaParallelepipeda < dlinaOtverstiya) || (vysotaParallelepipeda < shirinaOtverstiya && dlinaParallelepipeda < dlinaOtverstiya && shirinaParallelepipeda < vysotaOtverstiya) || (vysotaParallelepipeda < shirinaOtverstiya && dlinaParallelepipeda < vysotaOtverstiya && shirinaParallelepipeda < dlinaOtverstiya))
 		{
 			cout << "Pomestitsya" << endl;
 		}
@@ -42,7 +32,7 @@ int main()
 		{
 			cout << "Ne pomestitsya" << endl;
 		}
-	}
+	
 	return 0;
 
 }
